@@ -8,7 +8,7 @@ To build the Spring Boot app, package it into a
 container, and run in it on a local installation of Docker:
 
 ```bash
-$ bazel run :spring-board
+$ bazel run :spring-board -- --norun & docker run --rm -p 8080:8080 bazel:spring-board
 ```
 
 To run the tests:
