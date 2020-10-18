@@ -12,7 +12,9 @@ java_library(
     ],
 )
 
-java_binary(
+load("@io_bazel_rules_docker//java:image.bzl", "java_image")
+
+java_image(
     name = "spring-board",
     main_class = "com.MattTannahill.spring_board.SpringBoardApplication",
     runtime_deps = [

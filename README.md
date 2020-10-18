@@ -1,12 +1,20 @@
 # Spring Board
 
-A simple Java reference application using Spring Boot, Bazel, and Docker.
+A simple reference application using Spring Boot, Bazel, and Docker.
 
 ## Bazel
 
+To build the Spring Boot app, package it into a 
+container, and run in it on a local installation of Docker:
+
+```bash
+$ bazel run :spring-board
+```
+
+To run the tests:
+
 ```bash
 $ bazel test :spring-board-test
-$ bazel run :spring-board
 ```
 
 ## References
