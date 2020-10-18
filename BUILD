@@ -7,6 +7,7 @@ java_library(
     srcs = glob(["src/main/java/com/MattTannahill/spring_board/*.java"]),
     resources = glob(["src/main/resources/**"]),
     deps = [
+        "@maven//:org_springframework_spring_web",
         "@maven//:org_springframework_boot_spring_boot",
         "@maven//:org_springframework_boot_spring_boot_autoconfigure"
     ],

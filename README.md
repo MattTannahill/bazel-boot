@@ -20,3 +20,4 @@ $ bazel test :spring-board-test
 ## References
 
 1. [junit5-jupiter-starter-bazel](https://github.com/junit-team/junit5-samples/tree/main/junit5-jupiter-starter-bazel)
+1. [Spring Boot Dependency Versions](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-dependency-versions.html)
