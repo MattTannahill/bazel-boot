@@ -11,6 +11,11 @@ container, and run in it on a local installation of Docker:
 $ bazel run :bazel-boot -- --norun & docker run --rm -p 8080:8080 bazel:bazel-boot
 ```
 
+To issue a test request to the application while it is running:
+```bash
+$ curl localhost:8080/greeting
+```
+
 To run the tests:
 
 ```bash
