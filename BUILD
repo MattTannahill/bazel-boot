@@ -28,13 +28,18 @@ load("//:junit5.bzl", "java_junit5_test")
 
 java_junit5_test(
     name = "spring-board-test",
-    srcs = glob(["src/test/java/com/MattTannahill/spring_board/*.java"]),
+    srcs = glob(["src/test/java/com/MattTannahill/spring_board/*Tests.java"]),
     test_package = "com.MattTannahill.spring_board",
     deps = [
+        "@maven//:org_hamcrest_hamcrest",
+        "@maven//:org_springframework_spring_beans",
+        "@maven//:org_springframework_spring_test",
         "@maven//:org_springframework_boot_spring_boot_test",
+        "@maven//:org_springframework_boot_spring_boot_test_autoconfigure",
     ],
     runtime_deps = [
         "@maven//:org_springframework_boot_spring_boot_starter_test",
+        "@maven//:org_springframework_boot_spring_boot_starter_web",
         ":spring-board-lib"
     ],
 )

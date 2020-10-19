@@ -2,6 +2,7 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 RULES_JVM_EXTERNAL_TAG = "2.8"
 RULES_JVM_EXTERNAL_SHA = "79c9850690d7614ecdb72d68394f994fef7534b292c4867ce5e7dec0aa7bdfad"
+HAMCREST_VERSION = "2.2"
 SPRING_VERSION = "5.2.9.RELEASE"
 SPRING_BOOT_VERSION = "2.3.4.RELEASE"
 JUNIT_JUPITER_VERSION = "5.7.0"
@@ -19,6 +20,9 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_install(
     artifacts = [
+        "org.hamcrest:hamcrest:%s" % HAMCREST_VERSION,
+        "org.springframework:spring-beans:%s" % SPRING_VERSION,
+        "org.springframework:spring-test:%s" % SPRING_VERSION,
         "org.springframework:spring-web:%s" % SPRING_VERSION,
         "org.springframework.boot:spring-boot:%s" % SPRING_BOOT_VERSION,
         "org.springframework.boot:spring-boot-autoconfigure:%s" % SPRING_BOOT_VERSION,
@@ -32,6 +36,7 @@ maven_install(
             ]
         ),
         "org.springframework.boot:spring-boot-test:%s" % SPRING_BOOT_VERSION,
+        "org.springframework.boot:spring-boot-test-autoconfigure:%s" % SPRING_BOOT_VERSION,
     ],
     repositories = [
         "http://uk.maven.org/maven2",
