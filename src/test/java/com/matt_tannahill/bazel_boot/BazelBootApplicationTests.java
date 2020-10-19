@@ -1,10 +1,10 @@
-package com.MattTannahill.spring_board;
+package com.matt_tannahill.bazel_boot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBoardApplicationTests {
+class BazelBootApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,4 +1,4 @@
-# Spring Board
+# Bazel Boot
 
 A simple reference application using Spring Boot, Bazel, and Docker.
 
@@ -8,13 +8,13 @@ To build the Spring Boot app, package it into a
 container, and run in it on a local installation of Docker:
 
 ```bash
-$ bazel run :spring-board -- --norun & docker run --rm -p 8080:8080 bazel:spring-board
+$ bazel run :bazel-boot -- --norun & docker run --rm -p 8080:8080 bazel:bazel-boot
 ```
 
 To run the tests:
 
 ```bash
-$ bazel test :spring-board-test
+$ bazel test :bazel-boot-test
 ```
 
 ## References

@@ -1,4 +1,4 @@
-package com.MattTannahill.spring_board;
+package com.matt_tannahill.bazel_boot;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;

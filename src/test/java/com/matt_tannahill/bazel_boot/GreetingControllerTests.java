@@ -1,4 +1,4 @@
-package com.MattTannahill.spring_board;
+package com.matt_tannahill.bazel_boot;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
